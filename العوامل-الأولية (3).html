@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>العوامل الأولية</title>
+  <style>
+    
+    :root{ --primary:#de126a; --radius:16px; --text:#0b1220; --muted:#334155; }
+    body{font-family:Segoe UI, Tahoma, Arial, sans-serif; margin:0; background:#f8fafc; color:#0b1220;}
+    .shell{max-width:980px; margin:auto; padding:24px}
+    header{position:sticky; top:0; background:linear-gradient(180deg,#fff, #f8fafc); border-bottom:1px solid #e5e7eb; z-index:10}
+    .h-wrap{display:grid; grid-template-columns:1fr auto; align-items:center; gap:16px; padding:12px 24px}
+    .hdr-right h1{margin:8px 0 12px}
+    .logo{max-height:56px; width:auto; border:1px solid #e5e7eb; border-radius:8px; object-fit:contain; background:#fff; padding:4px; margin-inline-start:12px}
+    .badge{background:#ecfeff; color:#155e75; border:1px solid #bae6fd; padding:2px 8px; border-radius:999px; font-size:12px}
+    nav{display:flex; gap:8px; flex-wrap:wrap}
+    nav a{padding:8px 12px; border-radius:999px; border:1px solid #e5e7eb; text-decoration:none; color:#111827}
+    nav a:hover{border-color:var(--primary)}
+    section{background:#fff; border:1px solid #e5e7eb; border-radius:var(--radius); padding:18px 18px; margin:16px 0}
+    .section-sep{border:none; border-top:3px double #e5e7eb; margin:26px 0}
+    .title{font-weight:800; font-size:20px; margin-bottom:12px}
+    .objectives li{margin:6px 0}
+    .ex{border:1px dashed #d1d5db; border-radius:12px; padding:12px; margin:10px 0}
+    .ex .sol{background:#f1f5f9; border:1px solid #e5e7eb; border-radius:10px; padding:10px; margin-top:8px}
+    .q-item{border:1px solid #e5e7eb; border-radius:12px; padding:12px; margin:12px 0}
+    .q-head{margin-bottom:6px}
+    .q-text{font-weight:700; margin-bottom:10px}
+    .q-options{display:grid; grid-template-columns:1fr 1fr; gap:8px}
+    .q-options .opt{display:flex; gap:8px; align-items:flex-start; background:#f8fafc; border:1px solid #e5e7eb; border-radius:10px; padding:10px; cursor:pointer}
+    .q-options .opt[aria-pressed="true"]{outline:2px solid var(--primary)}
+    .q-options .letter{display:inline-flex; width:28px; height:28px; border-radius:8px; align-items:center; justify-content:center; background:#eef2ff}
+    .q-feedback{margin-top:8px; font-weight:700}
+    .ok{color:#15803d} .bad{color:#b91c1c}
+    .actions{display:flex; gap:8px; flex-wrap:wrap}
+    .btn{appearance:none; border:1px solid #e5e7eb; background:var(--primary); color:#fff; padding:10px 12px; border-radius:10px; cursor:pointer}
+    .btn.secondary{background:#111827; color:#fff}
+    .muted{color:#475569; font-size:12px}
+    .video{ margin:10px 0 }
+    .video-embed{ position:relative; padding-top:56.25%; background:#000; border:1px solid #e5e7eb; border-radius:12px; overflow:hidden }
+    .video-embed iframe, .video-embed video{ position:absolute; inset:0; width:100%; height:100% }
+    .q-text, .q-options .txt, #result { overflow-wrap:anywhere; word-break:break-word; }
+    @media print { header, .actions, nav { display:none !important; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="h-wrap">
+      <div class="hdr-right">
+        <div class="badge">صفحة الطالب (مكتفية ذاتيًا)</div>
+        <div class="muted">رياضيات - السادس </div>
+        <h1>العوامل الأولية</h1>
+        <nav aria-label="التنقل السريع"><a href="#goals">الأهداف</a><a href="#feedback">تغذية راجعة</a><a href="#quiz">اختبار</a></nav>
+      </div>
+
+    </div>
+  </header>
+  <div class="shell">
+    <section id="goals"><div class="title">أهداف التعلم</div><ul class="objectives"><li>أن يتمكن الطالب من تحليل الأعداد إلى عواملها الأوّلية بدقّة باستخدام شجرة العوامل أو القسمة المتكرّرة، وكتابتها بصيغة الأسس</li></ul><div class="muted">المدة المتوقعة: ٤٥ دقيقة</div></section>
+    <hr class="section-sep" />
+    <section id="feedback"><div class="title">تغذية راجعة</div><p>سؤال ١: ٦١ عددٌ أَوَّليّلأنّه لا يقبل القسمة إلا على ١ و٦١ (ليس من مضاعفات ٢ أو ٣ أو ٥ أو ٧).</p>
+<p>سؤال ٢: الإجابة الصحيحة: ✅ أ) ٢ × ١١</p>
+<p>تغذية راجعة:</p>
+<p>٢٢ عددٌ زوجي ⇒ نقسمه على ٢ فنحصل على ١١.</p>
+<p>١١ عددٌ أولي؛ إذن التحليل إلى العوامل الأولية هو ٢ × ١١ فقط.</p>
+<p>لماذا الخيارات الأخرى غير صحيحة؟</p>
+<p>ب) ٢ × ٢ × ٥ = ٢٠ (ليس ٢٢).</p>
+<p>ج) ٢٢ × ١ ليست عوامل أولية لأن ١ ليس عددًا أوليًا.</p>
+<p>د) ٣ × ١١ = ٣٣ (ليس ٢٢).</p>
+<p>تلميح سريع: عند تحليل أي عدد، ابدأ بأصغر الأعداد الأولية (٢، ٣، ٥…) وتوقف عندما تصل إلى عدد أولي.</p>
+<p>س٣:</p>
+<p>لإجابة الصحيحة: ✅ أ) ١٢</p>
+<p>السبب:</p>
+<p>١٢ = ٢ × ٢ × ٣ ← ثلاثة عوامل أولية.</p>
+<p>٥١ = ٣ × ١٧ (عاملان فقط).</p>
+<p>١٢١ = ١١ × ١١ (عاملان فقط).</p>
+<p>٤٩ = ٧ × ٧ (عاملان فقط).</p>
+<p>تغذية راجعة: أحسنت إذا اخترتِ ١٢. تذكّري: لعدّ عدد العوامل الأوّلية، حلّلي العدد بقسمة متتالية على الأصغر فالأكبر من الأعداد الأولية (٢، ٣، ٥، ٧…)، واحسبي العوامل بعد التفكيك.</p>
+<p>س٤:</p>
+<p>الإجابة الصحيحة: ✅ أ) ٧ و ٤٩</p>
+<p>السبب:</p>
+<p>٧ = ٧ (عدد أوّلي واحد)</p>
+<p>٤٩ = ٧ × ٧ = ٧²كلاهما يستخدم العامل الأوّلي نفسه (٧) فقط، لذا عواملُهما الأوّليّة متماثلة.</p>
+<p>تغذية راجعة:بقية الأعداد لا تشترك في نفس مجموعة العوامل الأوّلية:١٢ = ٢×٢×٣، ٥١ = ٣×١٧، ٤ = ٢×٢، ١٢١ = ١١×١١، ١٣ = ١٣، ١٤٣ = ١١×١٣.تلميح: عند المقارنة، ركّزي على نوع الأعداد الأوّلية المستخدمة، وليس تكرارها.</p></section>
+    <hr class="section-sep" />
+    <section id="quiz"><div class="title">اختبار قصير</div><div id="quizWrap"><article class="q-item" data-correct="0"><div class="q-head"><b>سؤال ١:</b></div><div class="q-text">صنِّف العددٍ   ٦١ إلى أوليّ، أو غير أوليّ، أو غير ذلك:
+</div><div class="q-options" role="group" aria-label="خيارات السؤال"><button class="opt" data-qi="0" data-oi="0" data-comment="" aria-pressed="false"><span class="letter">١</span><span class="txt">أوليّ</span></button><button class="opt" data-qi="0" data-oi="1" data-comment="" aria-pressed="false"><span class="letter">٢</span><span class="txt">غير أوليّ</span></button><button class="opt" data-qi="0" data-oi="2" data-comment="" aria-pressed="false"><span class="letter">٣</span><span class="txt">غير ذلك</span></button><button class="opt" data-qi="0" data-oi="3" data-comment="" aria-pressed="false"><span class="letter">٤</span><span class="txt">---</span></button></div><div class="q-feedback" hidden></div></article>
+<article class="q-item" data-correct="0"><div class="q-head"><b>سؤال ٢:</b></div><div class="q-text">يبلغ عدد الدول الأعضاء في جامعة الدول العربية ٢٢ دولة. اكتب العدد ٢٢ في صورة حاصل ضرب عوامله الأوّلية.
+</div><div class="q-options" role="group" aria-label="خيارات السؤال"><button class="opt" data-qi="1" data-oi="0" data-comment="" aria-pressed="false"><span class="letter">١</span><span class="txt">٢ × ١١</span></button><button class="opt" data-qi="1" data-oi="1" data-comment="" aria-pressed="false"><span class="letter">٢</span><span class="txt">٢ × ٢ × ٥</span></button><button class="opt" data-qi="1" data-oi="2" data-comment="" aria-pressed="false"><span class="letter">٣</span><span class="txt">٣ × ١١</span></button><button class="opt" data-qi="1" data-oi="3" data-comment="" aria-pressed="false"><span class="letter">٤</span><span class="txt">٢٢ × ١</span></button></div><div class="q-feedback" hidden></div></article>
+<article class="q-item" data-correct="0"><div class="q-head"><b>سؤال ٣:</b></div><div class="q-text">أيُّ الأطوال في الجدول لها ثلاثة عوامل أولية؟
+</div><div class="q-options" role="group" aria-label="خيارات السؤال"><button class="opt" data-qi="2" data-oi="0" data-comment="" aria-pressed="false"><span class="letter">١</span><span class="txt">١٢</span></button><button class="opt" data-qi="2" data-oi="1" data-comment="" aria-pressed="false"><span class="letter">٢</span><span class="txt">٥١</span></button><button class="opt" data-qi="2" data-oi="2" data-comment="" aria-pressed="false"><span class="letter">٣</span><span class="txt">١٢١</span></button><button class="opt" data-qi="2" data-oi="3" data-comment="" aria-pressed="false"><span class="letter">٤</span><span class="txt">٤٩</span></button></div><div class="q-feedback" hidden></div></article>
+<article class="q-item" data-correct="2"><div class="q-head"><b>سؤال ٤:</b></div><div class="q-text">أيُّ الأطوال في الجدول عواملها الأوّليّة متماثلة (أي تتكوّن من نفس الأعداد الأوّلية)؟
+</div><div class="q-options" role="group" aria-label="خيارات السؤال"><button class="opt" data-qi="3" data-oi="0" data-comment="" aria-pressed="false"><span class="letter">١</span><span class="txt">٤ و ١٢١</span></button><button class="opt" data-qi="3" data-oi="1" data-comment="" aria-pressed="false"><span class="letter">٢</span><span class="txt">١٣ و ١٤٣</span></button><button class="opt" data-qi="3" data-oi="2" data-comment="" aria-pressed="false"><span class="letter">٣</span><span class="txt">٧ و ٤٩</span></button><button class="opt" data-qi="3" data-oi="3" data-comment="" aria-pressed="false"><span class="letter">٤</span><span class="txt">١٢ و ٥١</span></button></div><div class="q-feedback" hidden></div></article></div><div class="actions"><button id="btnSubmit" class="btn">تصحيح</button><button id="btnReset" class="btn secondary">إعادة المحاولة</button><button id="btnCert" class="btn" style="display:none">شهادة إنجاز</button><div id="result" class="muted"></div></div></section>
+  </div>
+  <script>
+    const TEACHER_NAME = "";
+    function toArabicDigits(x){ return String(x).replace(/\d/g, d => "٠١٢٣٤٥٦٧٨٩"[d]); }
+    function openCertificate(){      var student = prompt("أدخل الاسم الثلاثي للطالب/ـة:"); if(!student) return; student = student.trim();      var DIR = document.documentElement.getAttribute("dir") || "rtl";      var PRIMARY = getComputedStyle(document.documentElement).getPropertyValue("--primary").trim() || "#22c55e";      var FONT = getComputedStyle(document.body).fontFamily || "Segoe UI, Tahoma, Arial, sans-serif";      var logoEl = document.querySelector(".logo"); var logo = (logoEl && logoEl.getAttribute("src")) || "";      var subject = (document.querySelector(".hdr-right .muted")||{}).textContent || "";      var title = (document.querySelector(".hdr-right h1")||{}).textContent || "";      var quizHtml = (document.getElementById("quizWrap")||{}).innerHTML || "";      var resultTxt = (document.getElementById("result")||{}).textContent || "";      function esc(s){ return String(s).replace(/[&<>\"]/g,function(ch){return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[ch]||ch;}); }      var html="";      html += "<!doctype html>";      html += "<html lang=\"ar\" dir=\"" + DIR + "\">";      html += "<head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">";      html += "<title>شهادة إنجاز</title>";      html += "<style>@page{size:A4; margin:12mm} :root{--primary:" + PRIMARY + ";--radius:16px} body{font-family:" + FONT + ";margin:0;color:#0b1220;background:#fff;line-height:1.5} .shell{max-width:900px;margin:auto;padding:8mm} @media print{.shell{padding:0}} .head3{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:10px} .head3 .center{font-weight:900;font-size:20px;text-align:center} h1{font-size:16px;margin:6px 0 0;text-align:center} .logo{max-height:48px;border:1px solid #e5e7eb;border-radius:8px;background:#fff;padding:3px;justify-self:start;margin-left:6mm} .subject{justify-self:end} .section-sep{border:none;border-top:2px solid #e5e7eb;margin:14px 0} section, .q-item{break-inside:avoid;page-break-inside:avoid} .q-item{border:1px solid #e5e7eb;border-radius:12px;padding:8px;margin:8px 0} .q-text{font-weight:700;font-size:14px;margin-bottom:6px} .q-options{display:grid;grid-template-columns:1fr 1fr;gap:6px} .q-options .opt{display:flex;gap:6px;align-items:flex-start;background:#f8fafc;border:1px solid #e5e7eb;border-radius:10px;padding:8px} .q-options .opt[aria-pressed=\"true\"]{outline:2px solid var(--primary)} .q-options .letter{display:inline-flex;width:24px;height:24px;border-radius:8px;align-items:center;justify-content:center;background:#eef2ff;font-size:13px} .q-feedback{margin-top:6px;font-weight:700} .ok{color:#15803d}.bad{color:#b91c1c} .sign-row{display:flex;justify-content:space-between;margin-top:12px} .muted{color:#475569;font-size:12px}</style>";      html += "</head><body><div class=\"shell\">";      html += "<div class=\"head3\">" + (logo? "<img class=\"logo\" src=\"" + esc(logo) + "\" alt=\"شعار\"/>" : "<div class=\"logo\"></div>") + "<div class=\"center\">شهادة إنجاز طالب / طالبة</div><div class=\"subject muted\">" + esc(subject) + "</div></div>";      html += "<h1>" + esc(title) + "</h1>";      html += "<hr class=\"section-sep\">";      html += "<section><div class=\"title\" style=\"font-size:18px;margin-bottom:8px\">الاختبار القصير</div><div id=\"quizCopy\">" + quizHtml + "</div><div class=\"muted\" style=\"margin-top:8px\">" + esc(resultTxt) + "</div></section>";      html += "<hr class=\"section-sep\">";      html += "<section><div class=\"sign-row\"><div><b>اسم الطالب/ـة:</b> " + esc(student) + "</div><div><b>اسم المعلم/ـة:</b> " + esc(TEACHER_NAME) + "</div></div></section>";      html += "<div class=\"print-hint muted\">اختر \"حفظ كملف PDF\" من نافذة الطباعة.</div>";      html += "</div><script>window.print()<" + "/script></body></html>";      var w = window.open("", "_blank"); if(!w || !w.document){ alert("لم أستطع فتح نافذة الشهادة. عطّل حاجب النوافذ المنبثقة مؤقتًا ثم أعد المحاولة."); return; } w.document.open(); w.document.write(html); w.document.close();    }
+    document.addEventListener("click", function(e){ var btn=e.target.closest(".opt"); if(!btn||!btn.closest("#quizWrap")) return; var group=btn.parentElement.querySelectorAll(".opt"); group.forEach(function(b){ b.setAttribute("aria-pressed","false"); }); btn.setAttribute("aria-pressed","true"); });
+    function grade(){ const items = Array.from(document.querySelectorAll(".q-item")); var correct=0, answered=0; items.forEach((item)=>{ const sel = item.querySelector(".opt[aria-pressed=\"true\"]"); const fb = item.querySelector(".q-feedback"); fb.hidden=false; if(!sel){ fb.textContent="اختر إجابة"; fb.className="q-feedback bad"; return } answered++; const oi = Number(sel.dataset.oi||0); const ci = Number(item.dataset.correct||0); const cm = sel.dataset.comment || ""; if(oi===ci){ correct++; fb.textContent="إجابة صحيحة ✓" + (cm ? " (" + cm + ")" : ""); fb.className="q-feedback ok" } else { fb.textContent="إجابة غير صحيحة ✗" + (cm ? " (" + cm + ")" : ""); fb.className="q-feedback bad" } }); var pct = items.length? Math.round((correct/items.length)*100):0; var resEl=document.getElementById("result"); if(resEl){ resEl.textContent = "نتيجتك: " + toArabicDigits(correct) + " / " + toArabicDigits(items.length) + " ("+ toArabicDigits(pct) +"%)" + (answered<items.length? " — (" + toArabicDigits(items.length-answered) + " أسئلة غير مجاب عنها)" : ""); } var cert=document.getElementById("btnCert"); if(cert) cert.style.display = (correct===items.length && items.length>0) ? "inline-flex" : "none"; }
+    function resetQuiz(){ document.querySelectorAll(".opt[aria-pressed=\"true\"]").forEach(b=>b.setAttribute("aria-pressed","false")); document.querySelectorAll(".q-feedback").forEach(f=>{f.hidden=true; f.textContent=""}); var res=document.getElementById("result"); if(res) res.textContent=""; var cert=document.getElementById("btnCert"); if(cert) cert.style.display="none"; }
+    (function(){ var s=document.getElementById("btnSubmit"); if(s) s.addEventListener("click", grade); var r=document.getElementById("btnReset"); if(r) r.addEventListener("click", resetQuiz); var c=document.getElementById("btnCert"); if(c) c.addEventListener("click", openCertificate); })();
+    window.addEventListener("beforeprint", ()=>{ document.querySelectorAll("details.sol").forEach(d=> d.open=true); });
+  </script>
+</body>
+</html>
